@@ -1,5 +1,16 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<Counter
+  @name="Sample Counter 1"
+  @maxCount={{10}}
+  style="background: lightyellow"
+/>
+
+<hr>
+
+<Counter
+  @name="Sample Counter 2"
+  @maxCount={{10}}
+  style="background: lightgreen"
+/>
+
 
 {{outlet}}
