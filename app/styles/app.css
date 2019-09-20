@@ -1,1 +1,41 @@
 /* put your styles here */
+.root {
+  padding: 10px;
+}
+
+.counter {
+  font-size: 30px;
+  padding: 10%;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+h1, .counter, .warning, h3, .toggle {
+  text-align: center;
+}
+
+.control {
+  display: flex;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 30px;
+  flex-grow: 1;
+}
+
+button.inc {
+  background: green;
+}
+
+button.dec {
+  background: red;
+}
+
+ .warning {
+   font-size: 20px;
+   color: red;
+   margin: 20px;
+ }
