@@ -1,0 +1,24 @@
+<div ...attributes>
+  <h1>{{@name}}</h1>
+
+  <div class="toggle">
+  <a href="#" {{on "click" this.appData.toggleCounterState}} >Toogle Counter State</a>
+  </div>
+
+  <div class="counter">
+    COUNT: {{this.count}}
+  </div>
+
+  {{#if this.isMaxCountReached}}
+  <div class="warning">Max Count Reached</div>
+  {{/if}}
+
+  {{#if this.appData.isCounterDisabled}}
+    <h3>Counter is Disabled</h3>
+  {{else}}
+    <div class="control">
+      <button class="dec" {{on "click" this.decrement}}> - </button>
+      <button class="inc" {{on "click" this.increment}}> + </button>
+    </div>
+  {{/if}}
+</div>
